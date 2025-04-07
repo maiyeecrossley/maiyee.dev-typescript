@@ -1,0 +1,18 @@
+nav {
+  z-index: 1000;
+  height: 150px;
+}
+
+main {
+  max-width: 100%;
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+div {
+  background-color: var(--background-primary); 
+}
+
+html {
+  scroll-behavior: smooth;
+}
