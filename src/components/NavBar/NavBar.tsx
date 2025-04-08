@@ -1,17 +1,21 @@
-import styles from "./NavBar.module.css";
+import { IParallax } from '@react-spring/parallax'
+import styles from './NavBar.module.css'
 
 type NavBarProps = {
-  scrollToHome: () => void;
-  scrollToAbout: () => void;
+  parallaxRef: React.RefObject<IParallax | null>
 }
 
-const NavBar: React.FC<NavBarProps> = ({ scrollToHome, scrollToAbout }) => {
+export default function NavBar({ parallaxRef }: NavBarProps) {
+  const scrollTo = (offset: number) => (e: React.MouseEvent) => {
+    e.preventDefault()
+    parallaxRef.current?.scrollTo(offset)
+  }
+
   return (
     <nav className={styles.navbar}>
-      <a onClick={scrollToHome} className={styles.navLink}>Home</a>
-      <a onClick={scrollToAbout} className={styles.navLink}>About Me</a>
+          <a href="#" onClick={scrollTo(0)}>Home</a>
+          <a href="#" onClick={scrollTo(1)}>About Me</a>
+          {/* <a href="#" onClick={scrollTo(2)}>Projects</a> */}
     </nav>
   )
 }
-
-export default NavBar

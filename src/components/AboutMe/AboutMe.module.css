@@ -3,8 +3,14 @@ h1 {
     font-size: 8em;
 }
 
+
 p {
-    font-size: 1em;
+    font-size: 1.2em;
+}
+
+span {
+    font-style: italic;
+    font-weight: bold;
 }
 
 .aboutMeContainer {
@@ -21,14 +27,24 @@ p {
     text-align: center;
     font-family: "Roboto", sans-serif;
     color: var(--text-primary);
-    margin-top: 10em;
+    padding-top: 6.5rem;
     padding-bottom: 30em;
+    position: relative;
+    z-index: 1;
 }
 
-.socials {
+.aboutMeContent {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+    gap: 2em;
+}
+
+.aboutMeImg {
+    border: 0.5em solid white;
+    max-width: 350px;
+    height: auto;
+
 }
