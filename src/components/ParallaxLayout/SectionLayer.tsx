@@ -8,7 +8,7 @@ type Props = {
 
 export default function SectionLayer({ offset, children }: Props) {
   return (
-    <ParallaxLayer offset={offset} speed={0.6} style={{ zIndex: 2 }}>
+    <ParallaxLayer offset={offset} speed={0.8} style={{ zIndex: 2 }}>
       {children}
     </ParallaxLayer>
   )
