@@ -15,7 +15,7 @@ export default function NavBar({ parallaxRef }: NavBarProps) {
     <nav className={styles.navbar}>
           <a href="#" onClick={scrollTo(0)}>Home</a>
           <a href="#" onClick={scrollTo(1)}>About Me</a>
-          {/* <a href="#" onClick={scrollTo(2)}>Projects</a> */}
+          <a href="#" onClick={scrollTo(2)}>Projects</a>
     </nav>
   )
 }

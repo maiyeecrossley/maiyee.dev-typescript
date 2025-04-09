@@ -1,28 +1,34 @@
-import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
+import { Parallax, IParallax } from '@react-spring/parallax'
 import { useRef } from 'react'
-import Home from "../Home/Home"
-import AboutMe from "../AboutMe/AboutMe"
-// import Projects from '../components/Projects/Projects'
-import NavBar from "../NavBar/NavBar"
-import styles from "./ParallaxLayout.module.css"
+import NavBar from '../NavBar/NavBar'
+import Home from '../Home/Home'
+import AboutMe from '../AboutMe/AboutMe'
+import Projects from '../Projects/Projects'
+import PetalLayer from './PetalLayer'
+import SectionLayer from './SectionLayer'
+import styles from './ParallaxLayout.module.css'
 
-export default function ScrollPageLayout() {
+export default function ParallaxLayout() {
   const parallaxRef = useRef<IParallax>(null)
 
   return (
     <>
       <NavBar parallaxRef={parallaxRef} />
-
-      <Parallax ref={parallaxRef} pages={2} className={styles.parallax}>
-        <ParallaxLayer offset={0} speed={0.9}>
+      <Parallax ref={parallaxRef} pages={3} className={styles.parallax}>
+        <PetalLayer offset={0} />
+        <SectionLayer offset={0}>
           <Home />
-        </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0.9}>
+        </SectionLayer>
+
+        <PetalLayer offset={1} />
+        <SectionLayer offset={1}>
           <AboutMe />
-        </ParallaxLayer>
-        {/* <ParallaxLayer offset={2} speed={0.6}>
+        </SectionLayer>
+
+        <PetalLayer offset={2} />
+        <SectionLayer offset={2}>
           <Projects />
-        </ParallaxLayer> */}
+        </SectionLayer>
       </Parallax>
     </>
   )

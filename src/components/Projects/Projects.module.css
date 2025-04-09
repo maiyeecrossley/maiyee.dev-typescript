@@ -1,0 +1,35 @@
+.aboutMeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroSection {
+    display: block;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-primary);
+    padding-top: 6.5rem;
+    padding-bottom: 30em;
+    position: relative;
+    z-index: 1;
+}
+
+.projectsContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+    gap: 2em;
+}
+
+.aboutMeImg {
+    border: 0.5em solid white;
+    max-width: 350px;
+    height: auto;
+
+}
