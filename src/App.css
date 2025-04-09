@@ -16,3 +16,28 @@ div {
 html {
   scroll-behavior: smooth;
 }
+
+h1 {
+  font-size: 8em;
+}
+
+h2 {
+  font-size: 6em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+a {
+  font-size: 1em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+span {
+  font-style: italic;
+  font-weight: bold;
+}

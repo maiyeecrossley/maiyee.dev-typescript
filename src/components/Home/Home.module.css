@@ -1,21 +1,14 @@
 
-h1 {
-    font-size: 8em;
+.homeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-h4 {
-    font-size: 2em;
-}
-
-a {
-    font-size: 1em;
-}
-
 
 .heroSection {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     text-align: center;
     font-family: "Roboto", sans-serif;

@@ -5,6 +5,7 @@ import LinkedInIcon from "../../assets/linkedin.png";
 
 export default function Home() {
     return (
+      <main className={styles.homeContainer}>
         <section className={styles.heroSection}>
           <h1>Mai-Yee Crossley</h1>
           <h4>Junior Software Engineer</h4>
@@ -15,6 +16,7 @@ export default function Home() {
             </div>
 
         </section>
+      </main>
       
     )
  }

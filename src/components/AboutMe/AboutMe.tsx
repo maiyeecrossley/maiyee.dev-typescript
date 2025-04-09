@@ -6,7 +6,7 @@ export default function AboutMe() {
 
       <main className={styles.aboutMeContainer}>
         <section className={styles.heroSection}>
-          <h1>About Me</h1>
+          <h2>About Me</h2>
           <div className={styles.aboutMeContent}>
             <img src={waveImg} className={styles.aboutMeImg} alt="profile image of Mai as an illustration"></img>
             <p>
