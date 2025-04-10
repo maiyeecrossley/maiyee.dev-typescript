@@ -14,6 +14,7 @@ export default function ParallaxLayout() {
   return (
     <>
       <NavBar parallaxRef={parallaxRef} />
+      
       <Parallax ref={parallaxRef} pages={3} className={styles.parallax}>
         <PetalLayer offset={0} />
         <SectionLayer offset={0}>
